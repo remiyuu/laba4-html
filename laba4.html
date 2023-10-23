@@ -1,1 +1,54 @@
-html-code-here
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Анкетные данные студента</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .frame {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .frame label {
+            display: inline-block;
+            width: 120px;
+        }
+
+        .frame input {
+            width: 200px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <label for="lastname">Фамилия студента:</label>
+        <input type="text" id="lastname" name="lastname">
+    </div>
+
+    <div class="frame">
+        <label for="firstname">Имя студента:</label>
+        <input type="text" id="firstname" name="firstname">
+    </div>
+
+    <div class="frame">
+        <label for="birthdate">Год рождения:</label>
+        <input type="text" id="birthdate" name="birthdate">
+    </div>
+    
+    <div class="frame">
+        <label for="address">Адрес студента:</label>
+        <input type="text" id="address" name="address">
+    </div>
+    
+    <div class="frame">
+        <label for="group">Номер группы:</label>
+        <input type="text" id="group" name="group">
+    </div>
+</body>
+</html>
