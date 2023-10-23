@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Анкетные данные студента</title>
+    <style>
+        .frame {
+            display: none; /* Изначально скрываем фреймы */
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .frame label {
+            display: inline-block;
+            width: 120px;
+        }
+
+        .frame input {
+            width: 200px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#frame1" target="iframe">Фамилия студента</a>
+
+    <div class="frame" id="frame1">
+        <label for="lastname">Фамилия:</label>
+        <input type="text" id="lastname" name="lastname">
+    </div>
+
+    <iframe name="iframe" style="display: none;"></iframe>
+</body>
+</html>
