@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Появление фрейма по нажатию кнопки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .frame {
+            display: none; /* Скрыть фрейм по умолчанию */
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .frame label {
+            display: inline-block;
+            width: 120px;
+        }
+
+        .frame input {
+            width: 200px;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        function showFrame() {
+            var frame = document.getElementById('frame');
+            frame.style.display = 'block'; // Показать фрейм
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showFrame()">Нажмите, чтобы открыть фрейм</button>
+
+    <div id="frame" class="frame">
+        <label for="lastname">Фамилия студента:</label>
+        <input type="text" id="lastname" name="lastname">
+
+        <!-- Остальные поля фрейма -->
+    </div>
+</body>
+</html>
